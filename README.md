@@ -15,4 +15,4 @@ To get started with this project, follow these simple steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
+   git clone https://github.com/CODE-WITH-AMUL/Simple-Website.git
