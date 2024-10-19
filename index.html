@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="light-mode">
+
+    <header>
+        <nav>
+            <div class="menu">
+                <div class="logo"><a href="#">codeWithAmul</a></div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <button class="toggle-button" id="toggleButton">
+                    <i class="fas fa-sun" id="toggleIcon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="img">
+        <div class="center">
+            <div class="title">Create Amazing Website</div>
+            <div class="sub_title">Code with Amul</div>
+            <div class="btns">
+                <button>Learn More</button>
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const toggleButton = document.getElementById('toggleButton');
+        const toggleIcon = document.getElementById('toggleIcon');
+        const body = document.body;
+
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            body.classList.toggle('light-mode');
+            toggleIcon.classList.toggle('fa-sun');
+            toggleIcon.classList.toggle('fa-moon');
+        });
+    </script>
+
+</body>
+</html>
